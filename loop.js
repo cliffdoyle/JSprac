@@ -1,0 +1,12 @@
+const output=document.querySelector('output')
+for (let i=10;i>0;i--){
+    const para=document.createElement('p')
+if (i===10){
+    para.textContent="Countdown 10"
+}else if (i===1){
+    para.textContent="Blast off!!"
+}else{
+    para.textContent=`${i}`
+}
+output.appendChild(para)
+}
